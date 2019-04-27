@@ -9,3 +9,5 @@ RUN mv wp-cli.phar /usr/local/bin/wp
 RUN wp plugin install broken-link-checker contact-form-7 --activate
 #COPY ./original_wp_plugin/ /path/to/plugins
 
+COPY ./unpko.txt /var/www/html/.
+RUN chmod 777 /var/www/html/unpko.txt
